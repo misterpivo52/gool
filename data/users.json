@@ -1,0 +1,38 @@
+{
+  "user1@example.com": {
+    "email": "user1@example.com",
+    "password": "password123",
+    "name": "Іван Франко",
+    "balance": 1000,
+    "registrationDate": "2025-06-18T11:00:00.000Z",
+    "purchasedGames": [],
+    "totalSpent": 0
+  },
+  "another_user@gmail.com": {
+    "email": "another_user@gmail.com",
+    "password": "strongpassword",
+    "name": "Леся Українка",
+    "balance": 850,
+    "registrationDate": "2025-06-17T15:30:10.000Z",
+    "purchasedGames": [
+      {
+        "gameId": 3,
+        "gameTitle": "GTA V",
+        "key": "GTA5-X1Y2-Z3A4-B5C6",
+        "keyImage": "images/keys/gta5_key1.jpg",
+        "price": 637,
+        "purchaseDate": "2025-06-17T18:20:00.000Z"
+      }
+    ],
+    "totalSpent": 637
+  },
+  "user2@example.com": {
+    "email": "user2@example.com",
+    "password": "password123",
+    "name": "Іван Франко",
+    "balance": 10300,
+    "registrationDate": "2025-06-18T11:00:00.000Z",
+    "purchasedGames": [],
+    "totalSpent": 0
+  }
+  }

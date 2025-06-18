@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "«ШИШКИ-УБИЙЦЫ» \uD83D\uDC80\uD83C\uDF3F",
+    "price": 899,
+    "platform": "Троешенена/Оболонь",
+    "genre": "индика",
+    "rating": 4.5,
+    "image": "images/8cf71c9e5b93b263749b48cac2706e6b.jpg",
+    "description": "1 грам ароматних шишечек ",
+    "inStock": true,
+    "discount": 25
+  },
+  {
+    "id": 2,
+    "title": "МДМА «Сльози Сатани»",
+    "price": 599,
+    "platform": "Троешенена/Оболонь/Деміївська",
+    "genre": "RPG",
+    "rating": 4.8,
+    "image": "images/witcher3.jpg",
+    "description": "Епічна RPG пригода у світі Відьмака. Величезний відкритий світ з безліччю квестів та історій.",
+    "inStock": true,
+    "discount": 0
+  },
+  {
+    "id": 3,
+    "title": "GTA V",
+    "price": 749,
+    "platform": "Steam",
+    "genre": "Action",
+    "rating": 4.6,
+    "image": "images/gtav.jpg",
+    "description": "Культова гра про пригоди в Лос-Сантосі. Відкритий світ, безліч можливостей та онлайн режим.",
+    "inStock": true,
+    "discount": 15
+  },
+  {
+    "id": 4,
+    "title": "Red Dead Redemption 2",
+    "price": 999,
+    "platform": "Steam",
+    "genre": "Action",
+    "rating": 4.7,
+    "image": "images/rdr2.jpg",
+    "description": "Вестерн епік від Rockstar Games. Неймовірно деталізований світ Дикого Заходу.",
+    "inStock": true,
+    "discount": 30
+  }
+]
