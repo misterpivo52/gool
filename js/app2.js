@@ -11,7 +11,7 @@ function App() {
   const [showProfileModal, setShowProfileModal] = React.useState(false);
 
   // Telegram link - замініть на ваше посилання
-  const telegramLink = "https://t.me/your_username";
+  const telegramLink = "https://t.me/moiseishop24bot";
 
   React.useEffect(() => {
     const fetchData = async () => {
@@ -83,7 +83,8 @@ function App() {
       <nav className="navbar navbar-expand-lg navbar-light sticky-top">
         <div className="container">
           <a className="navbar-brand fw-bold" href="#">
-            <i className="fas fa-gamepad me-2 text-primary"></i>GameKeys Store
+            <img src="images/moisey.png" alt="Logo" style={{width: '40px', height: '40px', marginRight: '8px'}} />
+            Шишки Моісея
           </a>
           <div className="d-flex align-items-center">
             {currentUser && <span className="me-3 balance-display">{currentUser.balance} ₴</span>}
@@ -275,7 +276,7 @@ function GameDetailsModal({ game, show, onClose, user, onPurchase, keysDB, saveK
             {user && <div className="me-auto"><small className="text-muted">Ваш баланс: </small><span className="balance-display">{user.balance} ₴</span></div>}
             <button className="btn btn-primary" disabled={availableKeys.length === 0 || !user || isProcessing} onClick={handlePurchase}>
               {isProcessing ? <span className="spinner-border spinner-border-sm me-2"></span> : <i className="fas fa-shopping-cart me-2"></i>}
-              Купити ключ
+            Халява
             </button>
           </div>
         </div>
@@ -303,7 +304,7 @@ function ProfileModal({ user, show, onClose }) {
                 <h6>Статистика</h6>
                 <p><strong>Поточний баланс:</strong> <span className="balance-display">{user.balance} ₴</span></p>
                 <p><strong>Всього витрачено:</strong> {user.totalSpent} ₴</p>
-                <p><strong>Куплено ігор:</strong> {user.purchasedGames.length}</p>
+                <p><strong>Куплено пріколов:</strong> {user.purchasedGames.length}</p>
               </div>
             </div>
             <h6>Куплені ігри та ключі</h6>
