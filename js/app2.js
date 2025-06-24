@@ -256,9 +256,9 @@ function GameDetailsModal({ game, show, onClose, user, onPurchase, keysDB, saveK
         <div className="modal-content">
           <div className="modal-header"><h5 className="modal-title">{game.title}</h5><button type="button" className="btn-close" onClick={onClose}></button></div>
           <div className="modal-body">
-            {purchaseStatus === 'success' && <div className="purchase-success"><h6 className="text-success"><i className="fas fa-check-circle me-2"></i>Покупка успішна!</h6><p>Ваш ключ та зображення додано до особистого кабінету.</p></div>}
+            {purchaseStatus === 'success' && <div className="purchase-success"><h6 className="text-success"><i className="fas fa-check-circle me-2"></i>Покупка успішна!</h6><p>Ваша закладка вже додана.</p></div>}
             {purchaseStatus === 'insufficient' && <div className="insufficient-funds"><h6 className="text-danger"><i className="fas fa-exclamation-triangle me-2"></i>Недостатньо коштів</h6></div>}
-            {purchaseStatus === 'no_keys' && <div className="insufficient-funds"><h6 className="text-danger"><i className="fas fa-exclamation-triangle me-2"></i>Ключі закінчились</h6></div>}
+            {purchaseStatus === 'no_keys' && <div className="insufficient-funds"><h6 className="text-danger"><i className="fas fa-exclamation-triangle me-2"></i>Закладок більше нема 😞</h6></div>}
             <div className="row">
               <div className="col-md-6"><img src={game.image} alt={game.title} className="img-fluid rounded" /></div>
               <div className="col-md-6">
@@ -307,11 +307,11 @@ function ProfileModal({ user, show, onClose }) {
                 <p><strong>Куплено пріколов:</strong> {user.purchasedGames.length}</p>
               </div>
             </div>
-            <h6>Куплені ігри та ключі</h6>
-            {user.purchasedGames.length === 0 ? <p className="text-muted">Ви ще не купували жодної гри.</p> : (
+            <h6>Куплені шишулі</h6>
+            {user.purchasedGames.length === 0 ? <p className="text-muted">Ви ще не купували жодного грамма.</p> : (
               <div className="table-responsive">
                 <table className="table table-striped align-middle">
-                  <thead><tr><th>Гра</th><th>Ключ та зображення</th><th>Ціна</th><th>Дата</th></tr></thead>
+                  <thead><tr><th>Прікол</th><th>Місце закладки</th><th>Ціна</th><th>Дата</th></tr></thead>
                   <tbody>
                   {user.purchasedGames.map((p, i) => (
                     <tr key={i}>
