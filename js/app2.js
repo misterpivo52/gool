@@ -10,7 +10,6 @@ function App() {
   const [showGameDetails, setShowGameDetails] = React.useState(null);
   const [showProfileModal, setShowProfileModal] = React.useState(false);
 
-  // Telegram link - замініть на ваше посилання
   const telegramLink = "https://t.me/moiseishop24bot";
 
   React.useEffect(() => {
@@ -25,7 +24,6 @@ function App() {
           fetch('data/users.json').then(res => res.json())
         ]);
 
-        // Оновлюємо користувачів: додаємо нових, старих залишаємо без змін
         const updatedUsers = { ...localUsers };
         Object.keys(freshUsersData).forEach(email => {
           if (!updatedUsers[email]) {
@@ -68,6 +66,13 @@ function App() {
     saveUsersDB(newUsersDB);
   };
 
+  const handleClearStorage = () => {
+    if (confirm('Оновити данні')) {
+      localStorage.clear();
+      window.location.reload();
+    }
+  };
+
   if (loading) {
     return (
       <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
@@ -91,6 +96,9 @@ function App() {
             <a href={telegramLink} target="_blank" className="btn btn-telegram me-2">
               <i className="fab fa-telegram-plane me-1"></i> Telegram
             </a>
+            <button className="btn btn-warning me-2" onClick={handleClearStorage} title="Очистити localStorage">
+              <i className="fas fa-trash me-1"></i>Оновлення
+            </button>
             {currentUser ? (
               <>
                 <button className="btn btn-outline-secondary me-2" onClick={() => setShowProfileModal(true)}>
